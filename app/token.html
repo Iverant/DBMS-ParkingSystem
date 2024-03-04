@@ -9,44 +9,67 @@
 <body>
   <div class="token-container">
     <div class="token-container1">
+      <form id="tokenForm" action="/token" method="POST">
       <input
         type="text"
+        name="reg_id"
         required="true"
         placeholder="ID"
-        class="token-textinput input"
+        class="token-textinput1 input"
       />
       <input
         type="text"
+        name="vehicle_no"
         required="true"
         placeholder="Number"
-        class="token-textinput1 input"
+        class="token-textinput3 input"
       />
+      <button type="submit" class="token-button button">Generate</button>
+      </form>
       <span class="token-text">Registration ID</span>
       <span class="token-text01">
         <span>Register here:</span>
         <br />
         <br />
       </span>
-      <button type="button" class="token-button button">Generate</button>
-      <div class="token-container2"></div>
-      <div class="token-container3"></div>
-      <button type="button" class="token-button1 button">Register</button>
+      <span class="token-container2"></span>
+      <span class="token-container3"></span>
+      <button type="button" class="token-button2 button">Register</button>
       <span class="token-text05">Vehicle number</span>
-      <span class="token-text06">Token</span>
-      <span class="token-text07">Slot</span>
-      <span class="token-text08">
+      <span class="token-text06">Vehicle1 number</span>
+      <span class="token-text07">Token</span>
+      <span class="token-text08">Slot</span>
+      <span class="token-text09">
         <span>Emergency Contact:</span>
         <span>9988665544</span>
         <br />
       </span>
-      <span class="token-text12">Parking Allotment:</span>
-      <button type="button" class="token-button2 button">Parking</button>
+      <span class="token-text13">Parking Allotment:</span>
+      <button type="button" class="token-button3 button">Parking</button>
       <img
         alt="image"
         src="Manipal_logo.png"
         class="token-image"
       />
+      <span class="token-text14">Registration1 ID</span>
+      <form id="exitForm" action="/exit" method="POST">
+      <input
+        type="text"
+        name="exit_id"
+        required="true"
+        placeholder="ID1"
+        class="token-textinput input"
+      />
+      <input
+        type="text"
+        name="exit_veh"
+        required="true"
+        placeholder="Number1"
+        class="token-textinput2 input"
+      />
+      <button type="submit" class="token-button1 button">Exit</button>
+    </form>
     </div>
-  </div>  
+  </div>      
 </body>
 </html>
